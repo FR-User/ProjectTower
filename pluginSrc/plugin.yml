@@ -3,3 +3,10 @@ version: 1.0
 main: com.codeless.projectTower.Main
 author: Cod51ess
 description: Project Tower Handler
+api-version: 1.19
+commands:
+  shop:
+    description: 'call shop manager'
+    aliases: [shop]
+    usage: /shop <create|edit|open|remove> <shopname>
+    permissions: shopmanager.executeshopmanager

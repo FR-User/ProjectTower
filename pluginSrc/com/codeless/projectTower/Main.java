@@ -16,6 +16,8 @@ public class Main extends JavaPlugin implements Listener{
 
         new registerEvents(this);
         new registerCommands(this);
+
+        GlobalDefine.plugin = this;
     }
 
     @Override
