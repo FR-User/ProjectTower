@@ -27,7 +27,7 @@ public class shopManager implements CommandExecutor{
 
 
         //sender가 Player이므로 player에 저장
-        Player player (Player) sender;
+        Player player = (Player) sender;
 
 
 
@@ -47,6 +47,7 @@ public class shopManager implements CommandExecutor{
             if(args.length != 2){
 
                 new SystemMessage().sendSysMsg((Conversable)player, SystemMessage.syntaxError);
+                new SystemMessage().sendSysMsg((Conversable)player, "hello world");
 
                 return true;
             }
@@ -81,6 +82,11 @@ public class shopManager implements CommandExecutor{
                     //샵 삭제
 
                     new ShopGUI(ShopManageType.REMOVE, args[1], player);
+                }
+                case "rename" : {
+                    //샵 개명
+                    
+                    new ShopGUI(ShopManageType.RENAME, args[1], player);
                 }
                 default : {
 

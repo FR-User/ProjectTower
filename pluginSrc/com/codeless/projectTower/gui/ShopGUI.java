@@ -21,14 +21,24 @@ public class ShopGUI{
     public ShopGUI(ShopManageType manageType, String shopName, Player player){
         switch(manageType){
             case ShopManageType.CREATE : {
+                //빈 상점 제작...
 
+                //사용되지 않음
+            }
+            case ShopManageType.EDIT : {
+                //상점 수정 코드
+            }
+            case ShopManageType.OPEN : {
+                //샵 호출
+
+                
             }
         }
     }
 
     
 
-    private void shopRenderer(Player player){
+    private void shopRenderer(Inventory shopInv, Player player){
 
         Inventory virtualGUI = Bukkit.createInventory(null, 54, "hello shop");
 

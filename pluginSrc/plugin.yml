@@ -8,5 +8,5 @@ commands:
   shop:
     description: 'call shop manager'
     aliases: [shop]
-    usage: /shop <create|edit|open|remove> <shopname>
+    usage: /shop <create|edit|open|rename|remove> <shopname>
     permissions: shopmanager.executeshopmanager

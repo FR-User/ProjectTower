@@ -4,5 +4,6 @@ public enum ShopManageType{
     CREATE,
     EDIT,
     OPEN,
-    REMOVE
+    REMOVE,
+    RENAME
 }
