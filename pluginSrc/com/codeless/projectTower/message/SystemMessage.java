@@ -13,6 +13,8 @@ public class SystemMessage{
 
     final public static String syntaxError = "구문이 맞지 않습니다";
 
+    final public static String unExpectError = "예상치 못한 오류가 발생했습니다";
+
 
 
     public void sendSysMsg(Conversable sender, String message){

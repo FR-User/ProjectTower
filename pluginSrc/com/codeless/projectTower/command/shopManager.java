@@ -106,6 +106,7 @@ public class shopManager implements CommandExecutor{
 
         }finally{
 
+            //커맨드 코드가 종료되었음을 알림.
             return true;
 
         }

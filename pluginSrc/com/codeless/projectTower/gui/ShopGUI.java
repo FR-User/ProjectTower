@@ -3,6 +3,7 @@ package com.codeless.projectTower.gui;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.entity.Player;
+import org.bukkit.conversable.Conversable;
 
 import com.codeless.projectTower.enums.ShopManageType;
 
@@ -32,6 +33,17 @@ public class ShopGUI{
                 //샵 호출
 
                 
+            }
+            case ShopManageType.REMOVE : {
+                
+            }
+            case ShopManageType.RENAME : {
+
+            }
+            default : {
+
+                new SystemMessage().sendSysMsg((Conversable)player, SystemMessage.unExpectError);
+
             }
         }
     }
